@@ -70,6 +70,7 @@ config.m4  config.w32  CREDITS  EXPERIMENTAL  php_testext.h  testext.c  testext.
 
 
 修改config.m4文件内容,其中dnl在这个配置内代表注释
+可以选择 with 或者enable ,enable方式需要重新编译PHP,所以我用 with,把它编译为so模块.
 
 1.with
 *
@@ -112,8 +113,6 @@ dnl Make sure that the comment is aligned:
 
 
 ### 第三步 编写php_testext.h文件
-
-enable方式需要重新编译PHP,所以我用 with,把它编译为so模块.
 
 testext.c 添加下面的代码
 ```

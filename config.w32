@@ -1,0 +1,13 @@
+// $Id$
+// vim:ft=javascript
+
+// If your extension references something external, use ARG_WITH
+// ARG_WITH("testext", "for testext support", "no");
+
+// Otherwise, use ARG_ENABLE
+// ARG_ENABLE("testext", "enable testext support", "no");
+
+if (PHP_TESTEXT != "no") {
+	EXTENSION("testext", "testext.c");
+}
+

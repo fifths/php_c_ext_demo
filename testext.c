@@ -136,13 +136,17 @@ PHP_MINFO_FUNCTION(testext)
 	*/
 }
 /* }}} */
-
+PHP_FUNCTION(testext_helloworld)
+{
+	php_printf("Hello World!!!\n");
+}
 /* {{{ testext_functions[]
  *
  * Every user visible function must have an entry in testext_functions[].
  */
 const zend_function_entry testext_functions[] = {
 	PHP_FE(confirm_testext_compiled,	NULL)		/* For testing, remove later. */
+	PHP_FE(testext_helloworld,	NULL)
 	PHP_FE_END	/* Must be the last line in testext_functions[] */
 };
 /* }}} */

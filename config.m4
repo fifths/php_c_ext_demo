@@ -7,9 +7,9 @@ dnl without editing.
 
 dnl If your extension references something external, use with:
 
-dnl PHP_ARG_WITH(testext, for testext support,
+PHP_ARG_WITH(testext, for testext support,
 dnl Make sure that the comment is aligned:
-dnl [  --with-testext             Include testext support])
+[  --with-testext             Include testext support])
 
 dnl Otherwise use enable:
 

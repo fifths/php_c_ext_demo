@@ -73,8 +73,9 @@ config.m4  config.w32  CREDITS  EXPERIMENTAL  php_testext.h  testext.c  testext.
 可以选择 with 或者enable ,enable方式需要重新编译PHP,所以我用 with,把它编译为so模块.
 
 1.with
-*
-with是作为动态链接库载入的,下边还有一个--enable-myext，是表示编译到php内核中
+
+* with是作为动态链接库载入的
+
 ```
 dnl PHP_ARG_WITH(testext, for testext support,
 dnl Make sure that the comment is aligned:
@@ -88,7 +89,9 @@ dnl Make sure that the comment is aligned:
 ```
 
 2.enable
-* 这个配置文件创造了一个--enable-testext的配置选项,而PHP_ARG_ENABLE的第二个选项会在配置的时候显示出来
+
+* 表示编译到php内核中.这个配置文件创造了一个--enable-testext的配置选项,而PHP_ARG_ENABLE的第二个选项会在配置的时候显示出来
+
 ```
 dnl PHP_ARG_ENABLE(testext, whether to enable testext support,
 dnl Make sure that the comment is aligned:

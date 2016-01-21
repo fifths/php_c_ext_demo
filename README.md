@@ -115,17 +115,17 @@ dnl Make sure that the comment is aligned:
 * PHP_NEW_EXTENSION 用于指定有哪些源文件应该被编译,文件和文件之间用空格隔开
 
 
-### 第三步 编写php_testext.h文件
+### 第三步 编写testext.c文件
 
 testext.c 添加下面的代码
-```
+```C
 const zend_function_entry testext_functions[] = {
 	PHP_FE(confirm_testext_compiled,	NULL)		/* For testing, remove later. */
 	PHP_FE_END	/* Must be the last line in testext_functions[] */
 };
 ```
 修改为
-```
+```C
 /*
 函数主体
 */
